@@ -13,11 +13,12 @@ public class UserTest {
 	private static final String LAST_NAME = "Salcedo";
 	private static final String FIRST_NAME = "Mariana";
 	private static final int AGE = 22;
+	private static final LocalDate BORN_DATE = LocalDate.of(1994, 6, 14);
 	User user;
 	
 	@Before
 	public void before() {
-		user = new User(123333, FIRST_NAME, LAST_NAME, LocalDate.of(1994, 6, 14));
+		user = new User(123333, FIRST_NAME, LAST_NAME, BORN_DATE);
 	}
 
 	@Test
