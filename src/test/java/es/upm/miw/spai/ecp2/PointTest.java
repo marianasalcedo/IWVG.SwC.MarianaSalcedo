@@ -42,6 +42,13 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testModifyCoords(){
+        this.pt.modifyCoords(1, 2);
+        assertEquals(1, pt.getX());
+        assertEquals(2, pt.getY());
+    }
 
     @Test
     public void testToString() {
