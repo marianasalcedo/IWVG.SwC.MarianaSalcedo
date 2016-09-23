@@ -41,5 +41,9 @@ public class FractionTest {
 	public void testGetDenominator() {
 		assertEquals(8, this.fraction.getDenominator());
 	}
-
+	
+	@Test
+    public void testFraccionImpropia() {
+        assertEquals(false, this.fraction.fraccionImpropia());
+    }
 }
