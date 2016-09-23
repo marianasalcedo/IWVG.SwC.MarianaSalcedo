@@ -37,5 +37,14 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
+    
+    @Test
+    public void productsAllCollection() {
+        DecimalCollection coleccion = new DecimalCollection();
+        coleccion.add(2);
+        coleccion.add(3);
+        coleccion.add(2);
+        assertEquals(12, coleccion.productsAllCollection(), 10e-5);
+    }
 
 }
