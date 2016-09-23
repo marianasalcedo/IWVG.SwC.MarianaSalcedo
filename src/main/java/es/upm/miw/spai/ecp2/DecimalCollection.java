@@ -34,5 +34,13 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double productsAllCollection() {
+        double cont = this.collection.get(0);
+        for (int i=1; i<this.collection.size(); i++) {
+            cont = cont * this.collection.get(i);
+        }
+        return cont;
+    }
 
 }
