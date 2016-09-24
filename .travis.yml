@@ -11,6 +11,6 @@ branches:
 notifications:
   email:
     recipients:
-      - betocolsf@gmail.com
+      - msalcedo.inf@gmail.com
 
 script: mvn verify
