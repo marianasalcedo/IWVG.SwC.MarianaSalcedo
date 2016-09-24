@@ -64,4 +64,8 @@ public class Fraction {
         return (this.denominator < this.numerator);
     }
     
+    public boolean isMayor(Fraction f){
+        return (this.decimal()>f.decimal());
+    }
+    
 }

@@ -46,4 +46,10 @@ public class FractionTest {
     public void testFraccionImpropia() {
         assertEquals(false, this.fraction.fraccionImpropia());
     }
+	
+	@Test
+    public void testIsMayor() {
+        assertTrue(this.fraction.isMayor(new Fraction(1, 3)));
+    }
+	
 }
