@@ -68,4 +68,8 @@ public class Fraction {
         return (this.decimal()>f.decimal());
     }
     
+    public boolean isPropia() {
+        return this.numerator < this.denominator;
+    }
+    
 }
