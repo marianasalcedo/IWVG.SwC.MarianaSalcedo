@@ -52,4 +52,9 @@ public class FractionTest {
         assertTrue(this.fraction.isMayor(new Fraction(1, 3)));
     }
 	
+   @Test
+    public void testisPropia() {
+        assertTrue(this.fraction.isPropia());
+    }
+	
 }
