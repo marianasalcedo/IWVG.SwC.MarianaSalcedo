@@ -44,7 +44,7 @@ public class FractionTest {
 	
 	@Test
     public void testFraccionImpropia() {
-        assertEquals(false, this.fraction.fraccionImpropia());
+        assertEquals(false, this.fraction.isFraccionImpropia());
     }
 	
 	@Test

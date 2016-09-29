@@ -60,8 +60,8 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
-    public boolean fraccionImpropia() {
-        return (this.denominator < this.numerator);
+    public boolean isFraccionImpropia() {
+        return (this.denominator <= this.numerator);
     }
     
     public boolean isMayor(Fraction f){
