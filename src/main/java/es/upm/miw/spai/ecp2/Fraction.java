@@ -60,4 +60,16 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean isFraccionImpropia() {
+        return (this.denominator <= this.numerator);
+    }
+    
+    public boolean isMayor(Fraction f){
+        return (this.decimal()>f.decimal());
+    }
+    
+    public boolean isPropia() {
+        return this.numerator < this.denominator;
+    }
+    
 }

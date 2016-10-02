@@ -2,6 +2,8 @@ package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.*;
 
+import java.time.LocalDate;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,11 +12,13 @@ public class UserTest {
 	private static final int INITIAL_NUMBER = 123333;
 	private static final String LAST_NAME = "Salcedo";
 	private static final String FIRST_NAME = "Mariana";
+	private static final int AGE = 22;
+	private static final LocalDate BORN_DATE = LocalDate.of(1994, 6, 14);
 	User user;
 	
 	@Before
 	public void before() {
-		user = new User(123333, FIRST_NAME, LAST_NAME);
+		user = new User(123333, FIRST_NAME, LAST_NAME, BORN_DATE);
 	}
 
 	@Test
@@ -48,4 +52,9 @@ public class UserTest {
 	public void testGetFamilyName() {
 		assertEquals(LAST_NAME, this.user.getFamilyName());
 	}
+	
+   @Test
+    public void testGetAge() {
+        assertEquals(AGE, this.user.getAge());
+    }
 }

@@ -41,5 +41,20 @@ public class FractionTest {
 	public void testGetDenominator() {
 		assertEquals(8, this.fraction.getDenominator());
 	}
-
+	
+	@Test
+    public void testFraccionImpropia() {
+        assertEquals(false, this.fraction.isFraccionImpropia());
+    }
+	
+	@Test
+    public void testIsMayor() {
+        assertTrue(this.fraction.isMayor(new Fraction(1, 3)));
+    }
+	
+   @Test
+    public void testisPropia() {
+        assertTrue(this.fraction.isPropia());
+    }
+	
 }
